@@ -16,6 +16,7 @@ $teal: #28bfa2;
 $salmon: #f44a4a;
 
 $text-color: #35393d;
+$vertical-grid: 27px;
 
 body {
 	font: 21px/1.43 "Lato",Helvetica,Arial,sans-serif;
@@ -98,6 +99,9 @@ h3 {
 }
 
 .text-items {
+
+	margin-bottom: 4 * $vertical-grid;
+
 	h1, h2, p {
 		width: 900px;
 	}
