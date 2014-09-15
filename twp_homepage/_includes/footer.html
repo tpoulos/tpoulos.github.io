@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <script>
+
+quotes = ["I believe that the right words are simple.",
+          "I want to build universes that don't fall apart two days later.",
+          "I'm the director of ScottyLabs.",
+          "I am the center of all beauty.",
+          "I believe there is style beyond style."]
+
+quoteCounter = 0;
+
+
+
+function quoteListener() {
+  var newQuoteButton = '<a href="#introduction" id="new-quote-button">What else?</a>'
+
+  function wrapQuote(t) {
+    return  "<p>" + t + "<p>"
+  }
+
+  function insertQuote() {
+    var a = document.getElementById("quote")
+    a.innerHTML = wrapQuote(quotes[quoteCounter]) + newQuoteButton;
+    quoteCounter = (quoteCounter + 1) % quotes.length;
+    window.setTimeout(function() {
+      var b = document.getElementById("new-quote-button");
+      b.onclick = insertQuote;
+    }, 0);
+  }
+
+  insertQuote();
+}
+
+$(document).ready(quoteListener);
+</script>
+</footer>
