@@ -1,0 +1,72 @@
+* {
+  mix-blend-mode: darken;
+}
+body {
+	font-family: 'cooper_hewittmedium', helvetica, arial;
+	padding: 24px;
+	font-size: 24px;
+	color: #2E2E2E;
+}
+
+header {
+	margin: 24px 0px 48px 0px;
+}
+
+header ul {
+	margin: 0;
+	padding: 0;
+}
+
+header li {
+	display: block;
+	float: left;
+	margin-right: 24px;
+	text-transform: uppercase;
+	font-family: 'cooper_hewittbold', helvetica, arial;
+}
+
+
+.scale-text {
+	font-family: 'cooper_hewittlight', helvetica, arial;
+	font-size: 94px;
+	line-height: 124px;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0;
+}
+p::before {
+	content: "¶ ";
+	opacity: 0.4;
+}
+
+em {
+	font-style: normal;
+	font-family: "cooper_hewittbold", helvetica, arial;
+}
+
+a {
+	color: inherit;
+}
+a:hover {
+	opacity: 0.8;
+}
+
+.name {
+	position: relative;
+	text-decoration: none;
+}
+.name > :nth-child(1) {
+	color: magenta;
+	position: absolute;
+	top: -13px;
+}
+.name > :nth-child(2) {
+	color: yellow;
+}
+.name > :nth-child(3) {
+	position: absolute;
+	top: 13px;
+	color: cyan;
+}
