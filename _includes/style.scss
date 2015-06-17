@@ -53,6 +53,10 @@ a:hover {
 	opacity: 0.8;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .name {
 	position: relative;
 	text-decoration: none;
@@ -74,25 +78,47 @@ a:hover {
 
 .clickable-container {
   position: relative;
+	font-family: "cooper_hewittbold", helvetica, arial;
 }
 
 .first-clickable {
   position: absolute;
-  top: -.13em;
-  left: -.03em;
   color: cyan;
+  transform: translate(0em, 0em);
+  transition: transform .05s;
+
 }
 
 .second-clickable {
   position: absolute;
-  top: -.16em;
-  left: -.09em;
+  transform: translate(-0.05em, -0.1em);
   color: yellow;
+  transition: transform .05s;
 }
 
 .third-clickable {
   position: relative;
-  top: .1px;
-  left: .04px;
+  transform: translate(0.05em, 0.1em);
   color: magenta;
+  transition: transform .05s;
+
+  display: inline-block;
+}
+
+.clickable-container:hover > .first-clickable {
+  transform: translate(-0.1em, -0.05em);
+}
+
+.clickable-container:hover > .second-clickable {
+  transform: translate(-0.2em, -0.25em);
+}
+
+.clickable-container:hover > .third-clickable {
+  transform: translate(0.1em, 0.2em);
+}
+
+.clickable-container:active > .first-clickable,
+.clickable-container:active > .second-clickable,
+.clickable-container:active > .third-clickable {
+    transform: translate(0em, 0em);
 }

@@ -5,16 +5,53 @@ layout: default
 
 <p class="scale-text">My name is <br><em>Taylor Whitman Poulos</em>
 <p class="scale-text">I am a <em>designer</em> studying <em><a href="http://talk.collegeconfidential.com/carnegie-mellon-university/1245959-someone-give-me-a-summary-of-information-systems.html">IS</a></em> and <em><a href="http://www.kashyaptodi.com/chi2015/institutions">HCI</a></em> at <br><em><a href="http://www.quora.com/Why-would-someone-choose-Carnegie-Mellon-over-Harvard">Carnegie Mellon University</a></em>
-<p class="scale-text">I work at <em><a href="http://expii.com">expii</a></em> <br>and when I'm not <br><em><span class="clickable-container"><span class="clickable">designing design things</span></span></em> <br>I read <em>books</em>
+<p class="scale-text">I work at <em><a href="http://expii.com">expii</a></em> <br>and when I'm not <br>
+
+<div class="clickable-container scale-text" id="flavor-text"><div class="clickable">designing design things</div></div>
+
+
+<div class="scale-text"> I read <em>books</em> </div>
 
 
 <script>
+  THINGS_I_DO = [
+  "Crafting pixels with <3s",
+  "Wishing I were cool like Jony Ive",
+  "Using the word \"scrum\" as a verb",
+  "Working on my w3schools certification",
+  "Doing \"user research\"",
+  "Doubling my whitespace",
+  "Paying attention in class"]
+
+  count = 0;
+
+
+  function splitContent(element) {
+      $(element).clone().addClass("first-clickable").insertBefore(element)
+      $(element).clone().addClass("second-clickable").insertBefore(element)
+      $(element).addClass("third-clickable")
+  }
+
+
   $(document).ready(function() {
     jQuery.each($(".clickable"), function(key, value) {
-      $(value).clone().addClass("first-clickable").insertBefore(value)
-      $(value).clone().addClass("second-clickable").insertBefore(value)
-      $(value).addClass("third-clickable")
+      splitContent(value)
     });
 
+    $("#flavor-text").click(function() {
+      $(this).empty()
+
+      textContent = $('<div/>', {
+          class: 'clickable',
+          text: THINGS_I_DO[count]
+      })
+
+      textContent.appendTo(this);
+
+      count = (count + 1) % THINGS_I_DO.length;
+
+      setTimeout(function(){ splitContent(textContent) }, 0)
+    })
   })
+
 </script>
