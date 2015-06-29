@@ -457,38 +457,39 @@ th {
 /* close commented backslash hack */
 
         * {
-  mix-blend-mode: darken;
 }
 body {
-	font-family: 'cooper_hewittmedium', helvetica, arial;
-	padding: 24px;
 	font-size: 24px;
 	color: #2E2E2E;
+  padding-bottom: 100000px;
+  font-family: 'cooper_hewittmedium', helvetica, arial;
 }
 
 header {
+  font-family: 'cooper_hewittbold', helvetica, arial;
 	margin: 24px 0px 48px 0px;
+  font-size: 72px;
+  letter-spacing: 0.15em;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+
+   mix-blend-mode: luminosity;
+   color: yellow;
+
+  z-index: 1000000;
+
 }
 
-header ul {
-	margin: 0;
-	padding: 0;
+header.clickable-container {
+  position: fixed;
+  z-index: 10000;
 }
 
-header li {
-	display: block;
-	float: left;
-	margin-right: 24px;
-	text-transform: uppercase;
-	font-family: 'cooper_hewittbold', helvetica, arial;
-}
-
-
-.scale-text {
-	font-family: 'cooper_hewittlight', helvetica, arial;
-	font-size: 94px;
-	line-height: 142px;
-	text-transform: uppercase;
+img.full-screen {
+  width: 100%;
 }
 
 p {
@@ -510,29 +511,15 @@ a {
 a:hover {
 	opacity: 0.8;
 }
+a.no-underline {
+  text-decoration: none;
+}
+
+
 
 .clickable {
   cursor: pointer;
 }
-
-.name {
-	position: relative;
-	text-decoration: none;
-}
-.name > :nth-child(1) {
-	color: magenta;
-	position: absolute;
-	top: -13px;
-}
-.name > :nth-child(2) {
-	color: yellow;
-}
-.name > :nth-child(3) {
-	position: absolute;
-	top: 13px;
-	color: cyan;
-}
-
 
 .clickable-container {
   position: relative;
@@ -542,7 +529,7 @@ a:hover {
 .first-clickable {
   position: absolute;
   color: cyan;
-  transform: translate(0em, 0em);
+  transform: translate(0.1em, 0em);
   transition: transform .05s;
 
 }
@@ -591,19 +578,17 @@ a:hover {
 
     <body>
 
-    <header class="clearfix clickable-container">
-  <a href="/" class="clickable"> TAYLOR WHITMAN POULOS</a>
+    <header class="clearfix ">
+  <a href="/" class="no-underline"> TAYLOR WHITMAN POULOS</a>
 </header>
 
 
-<!--
-<li class="clickable-container"><a class="clickable" href="/docs/resume_fall_2014.pdf">Résumé</a></li>
-<li class="clickable-container"><a class="clickable" href="mailto:poulos.taylor.w@gmail.com">Email</a></li> -->
-
-
-    <img src="/images/DSC00178.jpg">
+    <img src="/images/DSC00178.jpg" class="full-screen">
 
 <p> I am a designer and writer, currently studying Information Systems, Human Computer Interaction, and Creative Writing at Carnegie Mellon University</p>
+
+<p><a class="clickable" href="/docs/resume_fall_2014.pdf">Résumé</a>
+<p><a class="clickable" href="mailto:poulos.taylor.w@gmail.com">Email</a>
 
 
 <script>
