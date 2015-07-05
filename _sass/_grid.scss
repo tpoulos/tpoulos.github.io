@@ -1,0 +1,35 @@
+// My grid is based off the golden grid system by jonikorpi
+// https://github.com/jonikorpi/Golden-Grid-System
+
+
+
+$column: 100% / 18;
+
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	    -ms-box-sizing: border-box;
+			    box-sizing: border-box;
+}
+
+
+
+
+figure {
+	position: relative;
+}
+figure img, figure object, figure embed, figure video {
+	max-width: 100%;
+	display: block;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}

@@ -1,0 +1,107 @@
+$line: 24;
+$font-size: 16;
+$em: $font-size * 1;
+
+
+body {
+	/* 16px / 24px */
+	font-size: $font-size / 16 * 1em;
+	line-height: #{$line / $em}em;
+
+  font-family: 'cooper_hewittmedium', helvetica, arial;
+}
+
+
+
+
+/*
+*
+*	Zoomable baseline grid
+*	type size presets
+*
+*/
+
+
+@mixin small {
+	/* 13px / 18px */
+	font-size: #{($font-size*0.8125) / $em}em;
+	line-height: ($line*0.75) / ($font-size*0.8125) * 1em;
+}
+@mixin normal {
+	/* 16px / 24px */
+	font-size: #{$font-size / $em}em;
+	line-height: #{$line / $em}em; /* 24 */
+}
+
+h3 {
+	@include normal;
+}
+
+@mixin large {
+	/* 26 / 36px */
+	font-size: #{26 / $em}em;
+	line-height: ($line*1.5) / 26 * 1em;
+}
+
+h2, h1 {
+	@include large;
+}
+
+@mixin huge {
+	/* 42px / 48px */
+	font-size: #{42 / $em}em;
+	line-height: ($line*2) / 42 * 1em;
+}
+
+@mixin massive {
+	/* 68px / 72px */
+	font-size: #{68 / $em}em;
+	line-height: ($line*3) / 68 * 1em;
+}
+
+@mixin gigantic {
+	/* 110px / 120px */
+	font-size: #{110 / $em}em;
+	line-height: ($line*5) / 110 * 1em;
+}
+
+
+
+
+header, #twoway {
+	margin: 0 $column;
+}
+
+h1, h2 {
+	margin: (24/26*1em) 0 (36/26*1em);
+}
+
+h2 {
+	font-weight: normal;
+}
+
+h3 {
+	margin: #{24/$em}em 0 #{24/$em}em;
+}
+
+
+
+p {
+	margin: 0;
+}
+p::before {
+	content: "¶ ";
+	opacity: 0.4;
+}
+
+em {
+	font-style: normal;
+	font-family: "cooper_hewittbold", helvetica, arial;
+}
+
+a {
+	color: inherit;
+}
+a:hover {
+	opacity: 0.8;
+}
