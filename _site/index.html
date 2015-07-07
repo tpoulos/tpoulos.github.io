@@ -14,6 +14,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="/js/golden_gridlet.js"></script>
+    <script src="/js/clickable-script.js"></script>
 </head>
 
 
@@ -32,22 +33,6 @@
 
 <p><a class="clickable" href="/docs/resume-summer-2015.pdf">Résumé</a>
 <p><a class="clickable" href="mailto:poulos.taylor.w@gmail.com">Email</a>
-
-
-<script>
-  function splitContent(element) {
-      $(element).clone().addClass("first-clickable").insertBefore(element)
-      $(element).clone().addClass("second-clickable").insertBefore(element)
-      $(element).addClass("third-clickable")
-  }
-
-  $(document).ready(function() {
-    jQuery.each($(".clickable"), function(key, value) {
-      splitContent(value)
-    });
-  })
-
-</script>
 
 
 
