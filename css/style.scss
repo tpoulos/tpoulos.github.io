@@ -17,6 +17,9 @@ img.full-screen {
 }
 
 
-@import "grid"
-@import "type"
-@import "clickable"
+@import "variables";
+
+@import "grid";
+@import "type";
+@import "clickable";
+@import "header";

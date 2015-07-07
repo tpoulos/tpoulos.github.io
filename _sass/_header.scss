@@ -1,9 +1,11 @@
 header {
   position: fixed;
-  top: 0;
-  left: 48/42*1em;
-  right: 48/42*1em;
+  top: 24/26*1em;
+
+  left: 0;
+  right: 0;
 
   mix-blend-mode: luminosity;
   z-index: 1000000;
+
 }
