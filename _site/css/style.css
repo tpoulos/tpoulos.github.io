@@ -1,7 +1,4 @@
 @charset "UTF-8";
-img.full-screen {
-  width: 100%; }
-
 body {
   margin: 0;
   padding: 0; }
@@ -46,9 +43,6 @@ h2, h1 {
   /* 26 / 36px */
   font-size: 1.625em;
   line-height: 1.38462em; }
-
-header, #twoway {
-  margin: 0 5.55556%; }
 
 h1, h2 {
   margin: 0.92308em 0 1.38462em; }
@@ -117,9 +111,19 @@ a:hover {
   transform: translate(0em, 0em); }
 
 header {
+  margin: 0 5.55556%;
   position: fixed;
   top: 0.92308em;
   left: 0;
   right: 0;
   mix-blend-mode: luminosity;
   z-index: 1000000; }
+
+.full-screen-selfie {
+  width: 100%;
+  height: 60vw;
+  max-height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("/images/DSC00178.jpg"); }

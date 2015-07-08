@@ -8,6 +8,9 @@ body {
 }
 
 
+
+// Wrappers wrap the content of the grid.
+// They have padding that forms the gutters between columns
 .wrapper {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -32,4 +35,11 @@ figure img, figure object, figure embed, figure video {
 img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
+}
+
+
+// These containers set themselves to conform to the columns of the grid
+
+@mixin full-width-container {
+	margin: 0 $column;
 }

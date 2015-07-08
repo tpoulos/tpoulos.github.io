@@ -1,4 +1,6 @@
 header {
+  @include full-width-container;
+
   position: fixed;
   top: 24/26*1em;
 
