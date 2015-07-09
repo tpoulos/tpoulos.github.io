@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0; }
@@ -21,11 +20,109 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
 
+/*
+*
+*  Four-column grid active
+*  ----------------------------------------
+*  Margin   | #  1   2   3   4   |   Margin
+*  5.55555% | %  25  50  75  100 | 5.55555%
+*
+*/
+header, #twoway {
+  margin: 0 5.55556%; }
+
+h1, h2 {
+  margin: 0.92308em 0 1.38462em; }
+
+h2 {
+  font-weight: normal; }
+
+h3 {
+  margin: 1.5em 0 1.5em; }
+
+/*
+*
+*  Eight-column grid active
+*  ----------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8   |   Margin
+*  5.55555% | %  12.5  25.0  37.5  50.0  62.5  75.0  87.5  100 | 5.55555%
+*
+*
+*/
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1 */
+    font-size: 1em; }
+
+  #twoway .wrapper {
+    float: left;
+    width: 50%; } }
+/* @media screen and (min-width: 888px) */
+@media screen and (min-width: 55.5em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.0625em; } }
+/* @media screen and (min-width: 984px) */
+@media screen and (min-width: 61.5em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: 1em; }
+
+  header, #twoway {
+    margin: 0 16.66667%; } }
+/* @media screen and (min-width: 1200px) */
+@media screen and (min-width: 75em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.0625em; } }
+/* @media screen and (min-width: 1392px) */
+@media screen and (min-width: 87em) {
+  body {
+    /* Reset baseline grid to 16/16 = 1.0 */
+    font-size: 1em; }
+
+  header, #twoway {
+    margin: 0 27.77778%; } }
+/* @media screen and (min-width: 1680px) */
+@media screen and (min-width: 105em) {
+  body {
+    /* Zoom baseline grid to 17/16 = 1.0625 */
+    font-size: 1.0625em; } }
+/*
+*
+*  Sixteen-column grid active
+*  ----------------------------------------------------------------------------------------------------------------------
+*  Margin   | #  1     2     3     4     5     6     7     8     9     10    11    12    13    14    15    16  |   Margin
+*  5.55555% | %  6.25  12.5  18.75 25.0  31.25 37.5  43.75 50.0  56.25 62.5  68.75 75.0  81.25 87.5  93.75 100 | 5.55555%
+*
+*
+*/
+/* @media screen and (min-width: 1872px) */
+@media screen and (min-width: 117em) {
+  header, #twoway {
+    margin: 0 5.55556%; }
+
+  header .wrapper {
+    width: 37.5%;
+    margin-left: 25%; }
+
+  #twoway .wrapper {
+    width: 25%; }
+
+  #twoway .wrapper:first-child {
+    margin-left: 25%; } }
+/* @media screen and (min-width: 2080px) */
+@media screen and (min-width: 130em) {
+  body {
+    /* Zoom baseline grid to 18/16 = 1.125 */
+    font-size: 1.125em;
+    max-width: 160 em; } }
 body {
   /* 16px / 24px */
   font-size: 1em;
   line-height: 1.5em;
-  font-family: 'cooper_hewittmedium', helvetica, arial; }
+  font-family: 'lato', helvetica, arial; }
 
 /*
 *
@@ -53,12 +150,9 @@ h2 {
 h3 {
   margin: 1.5em 0 1.5em; }
 
-p {
-  margin: 0; }
-
-p::before {
-  content: "¶ ";
-  opacity: 0.4; }
+.article-title {
+  font-family: 'cooper_hewittbold', helvetica, arial;
+  text-transform: uppercase; }
 
 em {
   font-style: normal;
@@ -119,6 +213,27 @@ header {
   mix-blend-mode: luminosity;
   z-index: 1000000; }
 
+.article-body {
+  margin: 0 5.55556%; }
+
+.article-title {
+  text-align: center;
+  font-size: 5em;
+  line-height: 1;
+  margin-top: 9vw; }
+
+/*
+*
+*  Eight-column grid active
+*
+*/
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+  .article-body {
+    margin: 0 27.77778%; }
+
+  .article-title {
+    font-size: 9em; } }
 .full-screen-selfie {
   width: 100%;
   height: 60vw;

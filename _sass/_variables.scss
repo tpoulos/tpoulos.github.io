@@ -3,3 +3,14 @@ $column: 100% / 18;
 $line: 24;
 $font-size: 16;
 $em: $font-size * 1;
+
+
+
+// The column widths that trigger different column layouts.
+// For example, the eight column width should be used on any
+// screens at least 45em wide, and the sixteen column width
+// should be used on an screen more than 117em wide.
+
+$four-column-width: 0em;
+$eight-column-width: 45em;
+$sixteen-column-width: 117em;

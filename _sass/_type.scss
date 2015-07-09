@@ -6,7 +6,7 @@ body {
 	font-size: $font-size / 16 * 1em;
 	line-height: #{$line / $em}em;
 
-  font-family: 'cooper_hewittmedium', helvetica, arial;
+	font-family: 'lato', helvetica, arial;
 }
 
 
@@ -79,13 +79,11 @@ h3 {
 }
 
 
+.article-title {
 
-p {
-	margin: 0;
-}
-p::before {
-	content: "¶ ";
-	opacity: 0.4;
+
+	font-family: 'cooper_hewittbold', helvetica, arial;
+	text-transform: uppercase;
 }
 
 em {
