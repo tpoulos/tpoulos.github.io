@@ -1,0 +1,40 @@
+.article {
+  margin-bottom: 20vw;
+}
+
+
+.article-body {
+	@include full-width-container;
+}
+
+.article-title {
+  text-align: center;
+  font-size: 5em;
+  line-height: 1;
+  margin: 9vw 0;
+}
+
+.article-date {
+  font-style: italic;
+}
+
+
+/*
+*
+*  Eight-column grid active
+*
+*/
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+
+  .article-body {
+    @include centered-column-container;
+  }
+
+  .article-title {
+
+    font-size: 9em;
+  }
+
+}

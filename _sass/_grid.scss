@@ -26,11 +26,17 @@ body {
 // Some responsive media stuff
 figure {
 	position: relative;
+	margin: 5em 0;
 }
+
 
 figure img, figure object, figure embed, figure video {
 	max-width: 100%;
 	display: block;
+}
+
+figure.full-bleed {
+
 }
 
 img {

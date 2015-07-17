@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+  <script type="text/javascript" src="/js/show-header.js"></script>
+
+    <body>
+      <div class="article">
+        {% include header.html param="value" %}
+
+        {{ content }}
+
+        {% include footer.html %}
+
+      </div>
+    </body>
+</html>
