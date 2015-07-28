@@ -4,6 +4,8 @@ $line: 48;
 $font-size: 26;
 $em: $font-size * 1;
 
+$gutter: #{($line/4)/$em}em;
+
 
 
 // The column widths that trigger different column layouts.
