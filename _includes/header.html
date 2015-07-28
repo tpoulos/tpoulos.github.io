@@ -1,4 +1,4 @@
-<header class="wrapper {{ if include.param }} is-hidden {{endif}}">
+<header class="wrapper {%if page.type == 'article'%} is-hidden {%endif%}">
   <a href="/" class="">
     <img class="logo" src="/images/wordmark.svg">
   </a>

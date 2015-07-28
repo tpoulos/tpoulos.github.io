@@ -2,25 +2,26 @@ $(document).ready(function() {
   var $articleTitle = $(document).find(".article-title:first");
   var headerIsShown = isBelowTitle();
 
-  var titleDisplacement = $articleTitle.outerHeight();
+  if($(".article").length) {
 
-  $(document).scroll(function(e) {
-    if(headerIsShown && !isBelowTitle()) {
-      $("header").removeClass("is-shown").addClass("is-hidden");
-      console.log("showing")
+    var titleDisplacement = $articleTitle.outerHeight();
 
-      headerIsShown = false;
-    }
-    if(!headerIsShown && isBelowTitle()) {
-      $("header").removeClass("is-hidden").addClass("is-shown");
-      headerIsShown = true;
-      console.log("showing")
-    }
-  })
+    $(document).scroll(function(e) {
+      if(headerIsShown && !isBelowTitle()) {
+        $("header").removeClass("is-shown").addClass("is-hidden");
 
-  function isBelowTitle() {
-    if(window.scrollY > titleDisplacement) {
-      return true;
+        headerIsShown = false;
+      }
+      if(!headerIsShown && isBelowTitle()) {
+        $("header").removeClass("is-hidden").addClass("is-shown");
+        headerIsShown = true;
+      }
+    })
+
+    function isBelowTitle() {
+      if(window.scrollY > titleDisplacement) {
+        return true;
+      }
     }
   }
 })
