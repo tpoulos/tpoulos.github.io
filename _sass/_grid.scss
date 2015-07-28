@@ -50,7 +50,12 @@ img {
 @mixin full-width-container {
 	margin: 0 $column;
 }
+
 @mixin centered-column-container {
+	margin: 0 $column*3;
+}
+
+@mixin tiny-centered-column-container {
 	margin: 0 $column*5;
 }
 // These containers set themselves to conform to the columns of the grid

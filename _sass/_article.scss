@@ -9,7 +9,7 @@
 
 .article-title {
   text-align: center;
-  font-size: 5em;
+  font-size: 3em;
   line-height: 1;
   margin: 9vw 0;
 }
@@ -26,15 +26,32 @@
 */
 
 /* @media screen and (min-width: 720px) */
-@media screen and (min-width: 45em) {
+@media screen and (min-width: $eight-column-width) {
 
   .article-body {
     @include centered-column-container;
   }
 
   .article-title {
+    font-size: 6em;
+  }
+}
 
-    font-size: 9em;
+
+/*
+*
+*  Sixteen-column grid active
+*
+*/
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: $sixteen-column-width) {
+
+  .article-body {
+    @include tiny-centered-column-container;
   }
 
+  .article-title {
+    font-size: 9em;
+  }
 }
