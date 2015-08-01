@@ -1,0 +1,43 @@
+// Some responsive media stuff
+
+figure {
+	position: relative;
+	margin: 5em 0;
+}
+
+
+figure img, figure object, figure embed, figure video {
+	max-width: 100%;
+	display: block;
+}
+
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+img.below-512 {
+
+}
+
+img.mobile, img.tablet, img.desktop {
+	display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 512px) {
+	img.mobile {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 512px) and (max-width: 1024px) {
+	img.tablet {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	img.desktop {
+		display: block;
+	}
+}
