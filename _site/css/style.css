@@ -272,7 +272,8 @@ figure img, figure object, figure embed, figure video {
 
 img {
   border: 0;
-  -ms-interpolation-mode: bicubic; }
+  -ms-interpolation-mode: bicubic;
+  margin: auto; }
 
 img.mobile, img.tablet, img.desktop {
   display: none; }

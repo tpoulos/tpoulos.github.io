@@ -14,10 +14,7 @@ figure img, figure object, figure embed, figure video {
 img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
-}
-
-img.below-512 {
-
+	margin: auto;
 }
 
 img.mobile, img.tablet, img.desktop {
