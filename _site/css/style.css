@@ -111,7 +111,8 @@ body {
   font-family: 'source serif pro', helvetica, arial;
   font-size: 1.16071em;
   line-height: 1.84615em;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #555555; }
 
 /*
 *
@@ -160,11 +161,27 @@ h3 {
   font-family: 'cooper_hewittbold', helvetica, arial;
   text-transform: uppercase; }
 
+em {
+  font-weight: bolder;
+  font-style: normal; }
+
 a {
+  text-decoration: none;
   color: inherit; }
 
-a:hover {
-  opacity: 0.8; }
+p a, blockquote a {
+  color: #bbbbbb;
+  /* Creates a text underline with a gradient */
+  background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(#bbbbbb, #bbbbbb);
+  background-size: 0.1em   0.01em, 0.1em   0.07em, 0.07em, 0.07em;
+  background-repeat: no-repeat,no-repeat, repeat-x;
+  background-position-y: 90%, 90%, 90%;
+  background-position-x: 0%, 100%, 100%;
+  text-shadow: 1px 0px white, -1px 0px white, 2px 0px white, -2px 0px white, 3px 0px white, -3px 0px white, 4px 0px white, -4px 0px white, 1px 1px white, -1px 1px white, 2px 1px white, -2px 1px white, 3px 1px white, -3px 1px white, 4px 1px white, -4px 1px white, 1px -1px white, -1px -1px white, 2px -1px white, -2px -1px white, 3px -1px white, -3px -1px white, 4px -1px white, -4px -1px white; }
+p a:hover, blockquote a:hover {
+  text-decoration: none;
+  color: #dddddd;
+  background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(#dddddd, #dddddd); }
 
 .clickable {
   cursor: pointer; }
@@ -233,20 +250,47 @@ header.is-shown {
   text-align: center;
   font-size: 3em;
   line-height: 1;
-  margin: 9vw 0; }
+  margin: 9vw 0;
+  color: #252525; }
 
 .article-date {
-  font-style: italic; }
+  text-align: center;
+  display: block; }
+
+.article-date::before {
+  content: "[ "; }
+
+.article-date::after {
+  content: " ]"; }
+
+blockquote {
+  margin: 0;
+  padding: 1em 2em;
+  line-height: 1.4;
+  font-weight: 600; }
+  blockquote .attribution {
+    margin-top: 1em;
+    font-weight: 300; }
 
 /*
 *
 *  Eight-column grid active
 *
 */
-/* @media screen and (min-width: 720px) */
 @media screen and (min-width: 45em) {
   .article-body {
     margin: 0 16.66667%; }
+
+  blockquote {
+    margin: 0 -11.11111%;
+    padding: 0;
+    font-size: 2em; }
+    blockquote .attribution {
+      font-size: 0.5em; }
+    blockquote .attribution {
+      margin-top: 1em;
+      font-size: 0.5em;
+      font-weight: 300; }
 
   .article-title {
     font-size: 6em; } }
@@ -255,7 +299,6 @@ header.is-shown {
 *  Sixteen-column grid active
 *
 */
-/* @media screen and (min-width: 720px) */
 @media screen and (min-width: 117em) {
   .article-body {
     margin: 0 27.77778%; }

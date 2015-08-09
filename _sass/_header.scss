@@ -8,6 +8,8 @@ header {
   right: 0;
 
   mix-blend-mode: luminosity;
+
+  // Move the header to the front of the page
   z-index: 1000000;
 }
 
