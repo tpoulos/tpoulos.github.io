@@ -9,13 +9,13 @@ figure {
 figure img, figure object, figure embed, figure video {
 	max-width: 100%;
 	display: block;
+
+
+		border: 0;
+		-ms-interpolation-mode: bicubic;
+		margin: auto;
 }
 
-img {
-	border: 0;
-	-ms-interpolation-mode: bicubic;
-	margin: auto;
-}
 
 img.mobile, img.tablet, img.desktop {
 	display: none;

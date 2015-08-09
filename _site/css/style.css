@@ -268,9 +268,7 @@ figure {
 
 figure img, figure object, figure embed, figure video {
   max-width: 100%;
-  display: block; }
-
-img {
+  display: block;
   border: 0;
   -ms-interpolation-mode: bicubic;
   margin: auto; }
