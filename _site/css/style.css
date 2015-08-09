@@ -266,7 +266,7 @@ figure {
   position: relative;
   margin: 5em 0; }
 
-figure img, figure object, figure embed, figure video {
+figure img, figure object, figure embed, figure video, figure iframe {
   max-width: 100%;
   display: block;
   border: 0;
