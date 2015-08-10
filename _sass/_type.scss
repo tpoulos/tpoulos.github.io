@@ -2,12 +2,12 @@
 
 
 body {
-	font-family: 'source serif pro', helvetica, arial;
+	font-family: 'source-serif-pro', helvetica, arial;
 
 	font-size: $font-size / 16 * 1em / 1.4;
 	line-height: #{$line / $em}em;
 
-	font-weight: 400;
+	font-weight: 300;
 	color: $color-gray-dark;
 }
 
@@ -107,7 +107,8 @@ h3 {
 
 
 .article-title {
-	font-family: 'cooper_hewittbold', helvetica, arial;
+	font-family: 'nimbus-sans-condensed', helvetica, arial;
+	padding: 0 0.2em;
 	text-transform: uppercase;
 }
 

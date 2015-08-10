@@ -108,10 +108,10 @@ h3 {
     font-size: 1.07692em;
     max-width: 98.46154 em; } }
 body {
-  font-family: 'source serif pro', helvetica, arial;
+  font-family: 'source-serif-pro', helvetica, arial;
   font-size: 1.16071em;
   line-height: 1.84615em;
-  font-weight: 400;
+  font-weight: 300;
   color: #555555; }
 
 /*
@@ -158,7 +158,8 @@ h3 {
   margin: 0.92308em 0 0.92308em; }
 
 .article-title {
-  font-family: 'cooper_hewittbold', helvetica, arial;
+  font-family: 'nimbus-sans-condensed', helvetica, arial;
+  padding: 0 0.2em;
   text-transform: uppercase; }
 
 em {
