@@ -6,8 +6,6 @@ $(document).ready(function() {
 
     var titleDisplacement = $articleTitle.outerHeight();
 
-    updateHeader();
-
     $(document).scroll(function(e) {
       updateHeader();
     })
