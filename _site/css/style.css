@@ -264,6 +264,10 @@ header.is-shown {
 .article-date::after {
   content: " ]"; }
 
+.app-store-badges {
+  text-align: center;
+  margin: 2em; }
+
 blockquote {
   margin: 0;
   padding: 1em 2em;
