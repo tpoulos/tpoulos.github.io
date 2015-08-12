@@ -170,7 +170,7 @@ a {
   text-decoration: none;
   color: inherit; }
 
-p a, blockquote a {
+p a, blockquote a, ul a, ol a {
   color: #bbbbbb;
   /* Creates a text underline with a gradient */
   background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(#bbbbbb, #bbbbbb);
@@ -179,7 +179,7 @@ p a, blockquote a {
   background-position-y: 90%, 90%, 90%;
   background-position-x: 0%, 100%, 100%;
   text-shadow: 1px 0px white, -1px 0px white, 2px 0px white, -2px 0px white, 3px 0px white, -3px 0px white, 4px 0px white, -4px 0px white, 1px 1px white, -1px 1px white, 2px 1px white, -2px 1px white, 3px 1px white, -3px 1px white, 4px 1px white, -4px 1px white, 1px -1px white, -1px -1px white, 2px -1px white, -2px -1px white, 3px -1px white, -3px -1px white, 4px -1px white, -4px -1px white; }
-p a:hover, blockquote a:hover {
+p a:hover, blockquote a:hover, ul a:hover, ol a:hover {
   text-decoration: none;
   color: #dddddd;
   background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(#dddddd, #dddddd); }
@@ -333,7 +333,7 @@ img.mobile, img.tablet, img.desktop {
 @media screen and (min-width: 1024px) {
   img.desktop {
     display: block; } }
-.full-screen-selfie {
+.homepage-selfie {
   width: 100%;
   height: 60vw;
   max-height: 100vh;
@@ -341,3 +341,35 @@ img.mobile, img.tablet, img.desktop {
   background-size: cover;
   background-position: bottom;
   background-image: url("/images/DSC00178.jpg"); }
+
+.homepage-bio {
+  margin: 0 5.55556%;
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 1.4;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.homepage h3 {
+  font-family: 'nimbus-sans-condensed', helvetica, arial;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 0em; }
+.homepage ul {
+  margin: 0 0; }
+
+.homepage-links {
+  align: top;
+  margin: 0 16.66667%;
+  margin-bottom: 12em; }
+
+.homepage-work, .homepage-projects {
+  width: 44.44444%;
+  display: inline-block;
+  vertical-align: top; }
+
+.homepage-work {
+  width: 55.55556%; }
+
+.homepage-projects {
+  width: 33.33333%; }

@@ -1,0 +1,55 @@
+.homepage-selfie {
+  width: 100%;
+  height: 60vw;
+  max-height: 100vh;
+
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("/images/DSC00178.jpg");
+}
+
+
+.homepage-bio {
+  @include full-width-container;
+
+  font-size: 2em;
+  font-weight: 200;
+  line-height: 1.4;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.homepage {
+  h3 {
+  	font-family: 'nimbus-sans-condensed', helvetica, arial;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin-bottom: 0em;
+  }
+
+  ul {
+    margin: 0 0;
+  }
+}
+
+.homepage-links {
+  align: top;
+  margin: 0 3 * $column;
+  margin-bottom: 12em;
+}
+
+.homepage-work, .homepage-projects {
+  width: $column * 8;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.homepage-work {
+  width: $column * 10;
+}
+
+.homepage-projects {
+  width: $column * 6;
+}
