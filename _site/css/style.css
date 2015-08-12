@@ -287,7 +287,7 @@ blockquote {
     margin: 0 16.66667%; }
 
   blockquote {
-    margin: 0 -11.11111%;
+    margin: 2em -11.11111%;
     padding: 0;
     font-size: 2em; }
     blockquote .attribution {
