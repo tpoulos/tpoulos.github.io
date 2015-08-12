@@ -35,8 +35,9 @@
 }
 
 .homepage-links {
-  margin-bottom: 12em;
   margin: 0 1 * $column;
+
+  margin-bottom: 12em;
 }
 
 
@@ -44,6 +45,7 @@
 
   .homepage-links {
     margin: 0 1 * $column;
+    margin-bottom: 12em;
   }
 
   .homepage-work, .homepage-projects {
@@ -65,5 +67,6 @@
 
   .homepage-links {
     margin: 0 3 * $column;
+    margin-bottom: 12em;
   }
 }

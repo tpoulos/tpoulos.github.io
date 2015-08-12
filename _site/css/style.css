@@ -359,12 +359,13 @@ img.mobile, img.tablet, img.desktop {
   margin: 0 0; }
 
 .homepage-links {
-  margin-bottom: 12em;
-  margin: 0 5.55556%; }
+  margin: 0 5.55556%;
+  margin-bottom: 12em; }
 
 @media screen and (min-width: 45em) {
   .homepage-links {
-    margin: 0 5.55556%; }
+    margin: 0 5.55556%;
+    margin-bottom: 12em; }
 
   .homepage-work, .homepage-projects {
     width: 44.44444%;
@@ -378,4 +379,5 @@ img.mobile, img.tablet, img.desktop {
     width: 33.33333%; } }
 @media screen and (min-width: 117em) {
   .homepage-links {
-    margin: 0 16.66667%; } }
+    margin: 0 16.66667%;
+    margin-bottom: 12em; } }
