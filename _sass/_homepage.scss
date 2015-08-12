@@ -35,21 +35,35 @@
 }
 
 .homepage-links {
-  align: top;
-  margin: 0 3 * $column;
   margin-bottom: 12em;
+  margin: 0 1 * $column;
 }
 
-.homepage-work, .homepage-projects {
-  width: $column * 8;
-  display: inline-block;
-  vertical-align: top;
+
+@media screen and (min-width: $eight-column-width) {
+
+  .homepage-links {
+    margin: 0 1 * $column;
+  }
+
+  .homepage-work, .homepage-projects {
+    width: $column * 8;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .homepage-work {
+    width: $column * 10;
+  }
+
+  .homepage-projects {
+    width: $column * 6;
+  }
 }
 
-.homepage-work {
-  width: $column * 10;
-}
+@media screen and (min-width: $sixteen-column-width) {
 
-.homepage-projects {
-  width: $column * 6;
+  .homepage-links {
+    margin: 0 3 * $column;
+  }
 }

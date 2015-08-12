@@ -359,17 +359,23 @@ img.mobile, img.tablet, img.desktop {
   margin: 0 0; }
 
 .homepage-links {
-  align: top;
-  margin: 0 16.66667%;
-  margin-bottom: 12em; }
+  margin-bottom: 12em;
+  margin: 0 5.55556%; }
 
-.homepage-work, .homepage-projects {
-  width: 44.44444%;
-  display: inline-block;
-  vertical-align: top; }
+@media screen and (min-width: 45em) {
+  .homepage-links {
+    margin: 0 5.55556%; }
 
-.homepage-work {
-  width: 55.55556%; }
+  .homepage-work, .homepage-projects {
+    width: 44.44444%;
+    display: inline-block;
+    vertical-align: top; }
 
-.homepage-projects {
-  width: 33.33333%; }
+  .homepage-work {
+    width: 55.55556%; }
+
+  .homepage-projects {
+    width: 33.33333%; } }
+@media screen and (min-width: 117em) {
+  .homepage-links {
+    margin: 0 16.66667%; } }
