@@ -23,7 +23,7 @@
 
 .homepage {
   h3 {
-  	font-family: 'nimbus-sans-condensed', helvetica, arial;
+  	font-family: $title-font-stack;
     text-transform: uppercase;
     font-size: 1.5em;
     margin-bottom: 0em;
@@ -31,6 +31,10 @@
 
   ul {
     margin: 0 0;
+  }
+
+  em {
+    color: $color-black;
   }
 }
 

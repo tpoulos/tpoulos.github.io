@@ -108,7 +108,7 @@ h3 {
     font-size: 1.07692em;
     max-width: 98.46154 em; } }
 body {
-  font-family: 'source-serif-pro', helvetica, arial;
+  font-family: "source-serif-pro", helvetica, arial;
   font-size: 1.16071em;
   line-height: 1.84615em;
   font-weight: 300;
@@ -158,7 +158,7 @@ h3 {
   margin: 0.92308em 0 0.92308em; }
 
 .article-title {
-  font-family: 'nimbus-sans-condensed', helvetica, arial;
+  font-family: "nimbus-sans-condensed", helvetica, arial;
   padding: 0 0.2em;
   text-transform: uppercase; }
 
@@ -183,46 +183,6 @@ p a:hover, blockquote a:hover, ul a:hover, ol a:hover {
   text-decoration: none;
   color: #dddddd;
   background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(#dddddd, #dddddd); }
-
-.clickable {
-  cursor: pointer; }
-
-.clickable-container {
-  position: relative;
-  font-family: "cooper_hewittbold", helvetica, arial; }
-
-.first-clickable {
-  position: absolute;
-  color: cyan;
-  transform: translate(0.1em, 0em);
-  transition: transform .05s; }
-
-.second-clickable {
-  position: absolute;
-  transform: translate(-0.05em, -0.1em);
-  color: yellow;
-  transition: transform .05s; }
-
-.third-clickable {
-  position: relative;
-  transform: translate(0.05em, 0.1em);
-  color: magenta;
-  transition: transform .05s;
-  display: inline-block; }
-
-.clickable-container:hover > .first-clickable {
-  transform: translate(-0.1em, -0.05em); }
-
-.clickable-container:hover > .second-clickable {
-  transform: translate(-0.2em, -0.25em); }
-
-.clickable-container:hover > .third-clickable {
-  transform: translate(0.1em, 0.2em); }
-
-.clickable-container:active > .first-clickable,
-.clickable-container:active > .second-clickable,
-.clickable-container:active > .third-clickable {
-  transform: translate(0em, 0em); }
 
 header {
   margin: 0 5.55556%;
@@ -252,7 +212,7 @@ header.is-shown {
   font-size: 3em;
   line-height: 1;
   margin: 9vw 0;
-  color: #252525; }
+  color: #151515; }
 
 .article-date {
   text-align: center;
@@ -351,12 +311,14 @@ img.mobile, img.tablet, img.desktop {
   margin-bottom: 2em; }
 
 .homepage h3 {
-  font-family: 'nimbus-sans-condensed', helvetica, arial;
+  font-family: "nimbus-sans-condensed", helvetica, arial;
   text-transform: uppercase;
   font-size: 1.5em;
   margin-bottom: 0em; }
 .homepage ul {
   margin: 0 0; }
+.homepage em {
+  color: #151515; }
 
 .homepage-links {
   margin: 0 5.55556%;
