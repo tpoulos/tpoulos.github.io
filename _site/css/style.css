@@ -108,7 +108,7 @@ h3 {
     font-size: 1.07692em;
     max-width: 98.46154 em; } }
 body {
-  font-family: "source-serif-pro", helvetica, arial;
+  font-family: "source-serif-pro", georgia, serif;
   font-size: 1.16071em;
   line-height: 1.84615em;
   font-weight: 300;
@@ -158,13 +158,22 @@ h3 {
   margin: 0.92308em 0 0.92308em; }
 
 .article-title {
-  font-family: "nimbus-sans-condensed", helvetica, arial;
+  font-family: "nimbus-sans-condensed", "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosCnBold", "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
   padding: 0 0.2em;
   text-transform: uppercase; }
 
 em {
   font-weight: bolder;
   font-style: normal; }
+
+h3 {
+  font-family: "nimbus-sans-condensed", "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosCnBold", "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-bottom: 0em; }
+
+ul {
+  margin: 0 0; }
 
 a {
   text-decoration: none;
@@ -178,11 +187,19 @@ p a, blockquote a, ul a, ol a {
   background-repeat: no-repeat,no-repeat, repeat-x;
   background-position-y: 90%, 90%, 90%;
   background-position-x: 0%, 100%, 100%;
-  text-shadow: 1px 0px white, -1px 0px white, 2px 0px white, -2px 0px white, 3px 0px white, -3px 0px white, 4px 0px white, -4px 0px white, 1px 1px white, -1px 1px white, 2px 1px white, -2px 1px white, 3px 1px white, -3px 1px white, 4px 1px white, -4px 1px white, 1px -1px white, -1px -1px white, 2px -1px white, -2px -1px white, 3px -1px white, -3px -1px white, 4px -1px white, -4px -1px white; }
+  text-shadow: 1px  0px white, -1px  0px white, 2px  0px white, -2px  0px white, 3px  0px white, -3px  0px white, 4px  0px white, -4px  0px white, 1px  1px white, -1px  1px white, 2px  1px white, -2px  1px white, 3px  1px white, -3px  1px white, 4px  1px white, -4px  1px white, 1px -1px white, -1px -1px white, 2px -1px white, -2px -1px white, 3px -1px white, -3px -1px white, 4px -1px white, -4px -1px white; }
 p a:hover, blockquote a:hover, ul a:hover, ol a:hover {
   text-decoration: none;
   color: #dddddd;
   background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(#dddddd, #dddddd); }
+
+.dark a {
+  color: #555555;
+  background-image: linear-gradient(#151515, #151515), linear-gradient(#151515, #151515), linear-gradient(#555555, #555555);
+  text-shadow: 1px 0px #151515, -1px 0px #151515, 2px 0px #151515, -2px 0px #151515, 3px 0px #151515, -3px 0px #151515, 4px 0px #151515, -4px 0px #151515, 1px 1px #151515, -1px 1px #151515, 2px 1px #151515, -2px 1px #151515, 3px 1px #151515, -3px 1px #151515, 4px 1px #151515, -4px 1px #151515, 1px -1px #151515, -1px -1px #151515, 2px -1px #151515, -2px -1px #151515, 3px -1px #151515, -3px -1px #151515, 4px -1px #151515, -4px -1px #151515; }
+  .dark a:hover {
+    color: #323232;
+    background-image: linear-gradient(#151515, #151515), linear-gradient(#151515, #151515), linear-gradient(#323232, #323232); }
 
 header {
   margin: 0 5.55556%;
@@ -201,9 +218,6 @@ header.is-shown {
   opacity: 1;
   transition: opacity 0.5s ease; }
 
-.article {
-  margin-bottom: 20vw; }
-
 .article-body {
   margin: 0 5.55556%; }
 
@@ -216,7 +230,8 @@ header.is-shown {
 
 .article-date {
   text-align: center;
-  display: block; }
+  display: block;
+  margin: 6em 0; }
 
 .article-date::before {
   content: "[ "; }
@@ -310,13 +325,6 @@ img.mobile, img.tablet, img.desktop {
   margin-top: 2em;
   margin-bottom: 2em; }
 
-.homepage h3 {
-  font-family: "nimbus-sans-condensed", helvetica, arial;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  margin-bottom: 0em; }
-.homepage ul {
-  margin: 0 0; }
 .homepage em {
   color: #151515; }
 
@@ -343,3 +351,13 @@ img.mobile, img.tablet, img.desktop {
   .homepage-links {
     margin: 0 16.66667%;
     margin-bottom: 12em; } }
+footer {
+  background-color: #151515;
+  padding: 3em; }
+
+@media screen and (min-width: 45em) {
+  footer .projects-container {
+    margin: 0 22.22222%; } }
+@media screen and (min-width: 117em) {
+  footer .projects-container {
+    margin: 0 44.44444%; } }

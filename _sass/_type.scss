@@ -117,6 +117,17 @@ em {
 	font-style: normal;
 }
 
+h3 {
+	font-family: $title-font-stack;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	margin-bottom: 0em;
+}
+
+ul {
+	margin: 0 0;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -166,7 +177,7 @@ p, blockquote, ul, ol {
 								 3px -1px white,
 								-3px -1px white,
 								 4px -1px white,
-								-4px -1px white,
+								-4px -1px white;
 	}
 
 	a:hover {
@@ -177,4 +188,52 @@ p, blockquote, ul, ol {
 											linear-gradient(#fff, #fff),
 											linear-gradient($color-gray-lightest, $color-gray-lightest);
 	}
+}
+
+
+.dark a {
+	color: $color-gray-dark;
+
+	background-image: linear-gradient($color-black, $color-black),
+										linear-gradient($color-black, $color-black),
+										linear-gradient($color-gray-dark, $color-gray-dark);
+
+
+
+	text-shadow: 1px  0px $color-black,
+							-1px  0px $color-black,
+							 2px  0px $color-black,
+							-2px  0px $color-black,
+							 3px  0px $color-black,
+							-3px  0px $color-black,
+							 4px  0px $color-black,
+							-4px  0px $color-black,
+
+							 1px  1px $color-black,
+							-1px  1px $color-black,
+							 2px  1px $color-black,
+							-2px  1px $color-black,
+							 3px  1px $color-black,
+							-3px  1px $color-black,
+							 4px  1px $color-black,
+							-4px  1px $color-black,
+
+							 1px -1px $color-black,
+							-1px -1px $color-black,
+							 2px -1px $color-black,
+							-2px -1px $color-black,
+							 3px -1px $color-black,
+							-3px -1px $color-black,
+							 4px -1px $color-black,
+							-4px -1px $color-black;
+
+	&:hover {
+
+		color: $color-gray-darker;
+
+		background-image: linear-gradient($color-black, $color-black),
+											linear-gradient($color-black, $color-black),
+											linear-gradient($color-gray-darker, $color-gray-darker);
+	}
+
 }
