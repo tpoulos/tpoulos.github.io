@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var $articleTitle = $(document).find(".article-title:first");
-  var headerIsShown = true;
+  var headerIsShown = isBelowTitle();
 
   if($(".article").length) {
 
