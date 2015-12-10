@@ -361,3 +361,27 @@ footer {
 @media screen and (min-width: 117em) {
   footer .projects-container {
     margin: 0 44.44444%; } }
+.poem {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: black;
+  max-width: 450px;
+  padding: 10px;
+  margin: 2em auto; }
+  .poem p {
+    margin: 0; }
+    .poem p.indented {
+      padding-left: 2em; }
+    .poem p.mobile-break {
+      display: inline; }
+  .poem .stanza {
+    margin-bottom: 22.4px; }
+
+@media screen and (max-width: 480px) {
+  .poem body {
+    background-color: lightgreen; }
+  .poem p.mobile-break {
+    display: block; }
+  .poem p.mobile-hidden {
+    display: none; } }
