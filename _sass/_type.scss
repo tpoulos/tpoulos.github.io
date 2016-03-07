@@ -133,10 +133,8 @@ a {
 	color: inherit;
 }
 
-p, blockquote, ul, ol {
+p, blockquote, ul, ol, h3 {
 	 a {
-
-
 		color: $color-gray-lighter;
 
 		// Some information on this technique: https://eager.io/blog/smarter-link-underlines/
@@ -191,6 +189,15 @@ p, blockquote, ul, ol {
 											linear-gradient(#fff, #fff),
 											linear-gradient($color-gray-lightest, $color-gray-lightest);
 	}
+}
+
+h3 a {
+	background-size: 0.0em  4px,
+									 0.0em  4px,
+									 4px 4px;
+
+	background-position-y: 100%, 100%, 100%;
+	background-position-x: 0%, 100%, 100%;
 }
 
 
