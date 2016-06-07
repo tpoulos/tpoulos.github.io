@@ -319,8 +319,8 @@ img.mobile, img.tablet, img.desktop {
   max-height: 100vh;
   overflow: hidden;
   background-size: cover;
-  background-position: bottom;
-  background-image: url("/images/DSC00178.jpg"); }
+  background-position: center;
+  background-image: url("/images/selfie-spring-2016.jpg"); }
 
 .homepage-bio {
   margin: 0 5.55556%;
