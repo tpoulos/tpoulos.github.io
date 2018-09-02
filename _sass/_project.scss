@@ -5,6 +5,11 @@
 .project-meta {
   margin-top: 20vh;
   grid-column: content-start / content-end;
+
+  .project-title, .project-teaser, .project-context {
+    margin: $spacing-unit 0;
+
+  }
 }
 
 .project-title {
@@ -18,20 +23,23 @@
   }
 
   @include media-query($on-palm) {
-    @include type(6);
+    @include type(4);
     line-height: 1;
   }
 }
 
 .project-teaser {
   @include type(6);
+  line-height: 1;
 
   @include media-query($on-tablet) {
-    @include type(4);
+    @include type(5);
+    line-height: 1;
   }
 
   @include media-query($on-palm) {
-    @include type(3);
+    @include type(2);
+    line-height: 1;
   }
 }
 
