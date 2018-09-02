@@ -23,7 +23,7 @@
   }
 
   @include media-query($on-palm) {
-    @include type(4);
+    @include type(6);
     line-height: 1;
   }
 }
