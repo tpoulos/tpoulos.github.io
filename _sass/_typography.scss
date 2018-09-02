@@ -1,0 +1,52 @@
+.large-text {
+  @include stroke-text;
+
+  font-size: 120px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+
+  @include media-query($on-tablet) {
+    font-size: 100px;
+  }
+  @include media-query($on-palm) {
+    font-size: 72px;
+  }
+}
+
+.title {
+  margin: 4 * $spacing-unit 0 2 * $spacing-unit;
+  &::before {
+    content: "— "
+  }
+  margin-left: 1.15em;
+  text-indent: -1.15em;
+}
+
+p {
+  margin-top: 1em;
+
+  &.outdent {
+    margin-left: 1.15em;
+    text-indent: -1.15em
+  }
+}
+
+a {
+    color: $color-text;
+    text-decoration: none;
+    border-bottom: 0.07em solid;
+
+    &:hover {
+        color: lighten($color-text, 60%);
+        border-bottom: 0.07em solid lighten($color-text, 60%);
+    }
+
+    &:active {
+        color: darken($color-brand, 24%);
+        border-bottom: 0.07em solid darken($color-brand, 24%);
+    }
+}
+
+ul {
+  list-style-type: circle;
+}

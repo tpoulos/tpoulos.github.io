@@ -1,0 +1,41 @@
+.projects-content {
+  grid-column: content-start / span 7;
+  @include type(5);
+
+  @include media-query($on-tablet) {
+    grid-column: content-start / content-end;
+    @include type(3);
+  }
+
+  @include media-query($on-palm) {
+    @include type(2);
+  }
+}
+
+.projects-sidebar {
+  grid-column: span 4 / content-end;
+  @include type(0);
+
+  @include media-query($on-tablet) {
+    grid-column: content-start / content-end;
+  }
+}
+
+
+
+.projects-wow {
+  left: 5rem;
+  top: -3rem;
+  transform: rotate(145deg);
+  position: absolute;
+
+  @include media-query($on-tablet) {
+    left: 4rem;
+    top: -4rem;
+  }
+
+  @include media-query($on-palm) {
+    left: 2rem;
+    top: -4.5rem;
+  }
+}

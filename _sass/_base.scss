@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+  color: $color-text;
+  background-color: $color-background;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  @include type(0);
+}
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+.face {
+  position: absolute;
+  z-index: -1;
+}
+
+.error-smile {
+  left: 2rem;
+  top: 4.5rem;
+  transform: rotate(-12deg);
+
+  @include media-query($on-tablet) {
+    top: 3rem;
+  }
+
+  @include media-query($on-palm) {
+    top: 1rem;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: [start] 1fr [content-start] repeat(12, (($max-content-width / 12) - $spacing-unit)) [content-end] 1fr [end];
+  grid-column-gap: $spacing-unit;
+
+  margin-bottom: 8 * $spacing-unit;
+
+  @include media-query($on-tablet) {
+    grid-template-columns: [start] 1fr [content-start] repeat(12, (($tablet-content-width / 12) - $spacing-unit)) [content-end] 1fr [end];
+  }
+
+  @include media-query($on-palm) {
+    grid-template-columns: [start] $spacing-unit * 2 [content-start] repeat(12, 1fr) [content-end] $spacing-unit * 2 [end];
+  }
+}
+
+.page-title {
+  grid-column: content-start / content-end;
+  margin-top: 10vh;
+  position: relative;
+}

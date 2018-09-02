@@ -1,0 +1,39 @@
+.talks-intro {
+  grid-column: content-start / span 4;
+
+  @include media-query($on-tablet) {
+    grid-column: content-start / span 5;
+  }
+
+  @include media-query($on-palm) {
+    grid-column: content-start / content-end;
+  }
+}
+.talks-content {
+  grid-column: 7 / span 6;
+  @include type(1);
+
+  @include media-query($on-tablet) {
+    grid-column: span 7 / content-end;
+    @include type(1);
+  }
+
+  @include media-query($on-palm) {
+    grid-column: content-start / content-end;
+    @include type(0);
+  }
+}
+
+.talks-smile {
+  left: -2.9rem;
+  top: 3.1rem;
+  transform: rotate(-52deg);
+  position: relative;
+  display: inline-block;
+
+  @include media-query($on-palm) {
+    position: absolute;
+    left: 6rem;
+    top: 0rem;
+  }
+}

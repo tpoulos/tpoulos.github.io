@@ -1,0 +1,149 @@
+---
+layout: default
+title: "Blitz"
+---
+<div class="project-meta">
+  <h1 class="project-title">Blitz</h1>
+  <div class="project-teaser">Teaching football like a foreign language</div>
+  <ul class="project-context">
+    <li>Carnegie Mellon University, Human-Computer Interaction Capstone</li>
+    <li>Tech lead on a five person team</li>
+  </ul>
+</div>
+
+<div class="project-section">
+  <p>Football players joining a new team have a herculean learning task ahead of them.
+  <p>Every team has a playbook full of code words, hand symbols, formations and routes that the player has to memorize. Worse, this base playbook is tweaked weekly as the team prepares for their next opponent.
+</div>
+
+<div class="project-figure">
+  <img src="{{ "images/projects/blitz/playbook.png" | prepend: site.baseurl | prepend: site.url }}">
+  <label>An example page from a playbook. An NFL playbook contains hundreds of these diagrams, filling a 3 inch thick binder. That binder is updated every week with tweaks specific to the next opponent. It's a lot.</label>
+</div>
+
+<div class="project-section">
+  <p>For my Human-Computer Interaction capstone project, I worked with four other students (Avanti Dabholkar, <a href="//www.micahfenner.com">Micah Fenner</a>, <a href="//www.balderoty.com">Ben Alderoty</a>, and <a href="//www.robynlucile.com">Robyn Lambert</a>) on playbook training software for the Pittsburgh Steelers.
+  <p>After twelve weeks of user research and prototyping, we proposed a system that teaches plays with a Duolingo inspired quiz-based learning system.</p>
+</div>
+
+<div class="project-section">
+  <h2 class="title">The first challenge: what is football?</h2>
+  <p>Before we could teach football, we had to learn it ourselves. We got a crash course from our client, Alejandro Villanueva, entrepreneur and Steelers offensive tackle (#78), in the basic mechanics of the game.
+</div>
+
+<div class="project-figure">
+  <img src="{{ "images/projects/blitz/learning-football.jpeg" | prepend: site.baseurl | prepend: site.url }}">
+  <label>The team being taught football. This was back when I had bleach-blonde hair, one of many questionable wardrobe and lifestyle choices.</label>
+</div>
+
+
+<div class="project-section">
+  <h2 class="title">The research</h2>
+  <p> We conducted:
+  <ul>
+    <li>A competitive analysis of football training tools.</li>
+    <li>A literature review of complex learning diagrams, including the Army Ranger Handbook and chess diagrams.</li>
+    <li>3 weeks of interviews with players, coaches, and staff from the Pittsburgh Steelers and Carnegie Mellon Tartans.</li>
+  </ul>
+  <p> And synthesized our results in a training timeline, affinity diagram, and personas.
+</div>
+
+<div class="project-figure">
+  <img src="{{ "images/projects/blitz/season-timeline.jpg" | prepend: site.baseurl | prepend: site.url }}">
+  <label>The training timeline of an NFL team. New players have a very limited amount of time to learn the playbook. And, if they don’t learn fast enough they’re likely to be cut: the initial 90 man roster is cut down to a final team of 53 players in under 4 months.</label>
+</div>
+
+<div class="project-figure">
+  <img src="{{ "images/projects/blitz/affinity.jpeg" | prepend: site.baseurl | prepend: site.url }}">
+  <label>Our affinity diagram synthesizing everything we learned in our interviews. Unfortunately, we left the windows open overnight and all the notes blew off. We started again from scratch and used more tape.</label>
+</div>
+
+<div class="project-figure">
+  <img src="{{ "images/projects/blitz/personas.png" | prepend: site.baseurl | prepend: site.url }}">
+  <label>A summary of the personas we created to understand our audience: players. There were also more detailed personas for both players and coaches.</label>
+</div>
+
+<div class="project-section">
+  <h2 class="title">The research</h2>
+  <p> Five core themes emerged:
+  <ul>
+    <li>Confidence is critical to performance</li>
+    <li>The playbook is foundational, but dynamic</li>
+    <li>Repetitions are the most important part of the learning process</li>
+    <li>Time is a limited resource for players</li>
+    <li>There’s a lack of understanding about the best learning strategies</li>
+  </ul>
+</div>
+
+<div class="project-section">
+  <h2 class="title">The vision: A playbook quizzing app</h2>
+  <p> To narrow down to a single vision, we did a series of workshops with our client. We used our personas to quickly storyboard concepts, and then held a group discussion to refine our vision.
+</div>
+
+
+<div class="project-figure full-bleed">
+  <img src="{{ "images/projects/blitz/visioning.png" | prepend: site.baseurl | prepend: site.url }}">
+  <label>Some of the storyboards we used to build a shared vision.</label>
+</div>
+
+
+<div class="project-section">
+  <p> We envisioned an interactive playbook quizzing tool.
+  <p> Rather than being asked to memorize a huge stack of plays on paper, players work through quizzes that slowly build up their knowledge. Questions are interactive and visual, and get more challenging as players get more experienced.
+  <p> At every stage, players take three types of quizzes. We based this breakdown on the kinds of quizzes we saw in the Steeler’s and Tartan’s locker room.
+  <ul>
+    <li>The foundational playbook</li>
+    <li>Opponent-specific tweaks</li>
+    <li>Weekly focus-areas</li>
+  </ul>
+  <p> At first, we envisioned a complex multi-stage training tool, with separate learning and quizzing modes, like this:
+</div>
+
+
+<div class="project-figure">
+  <img src="{{ "images/projects/blitz/flows-original.png" | prepend: site.baseurl | prepend: site.url }}">
+  <label>Our original idea. It’s a lot, isn’t it?</label>
+</div>
+
+<div class="project-section">
+  <p> But after user feedback that it was too complicated, we took inspiration from Duolingo, a language learning app, where people exclusively learn from being quizzed. Knowledge is built up on questions that get progressively harder, until they intuitively know the correct answer. This approach is simpler, more interactive, and, we hypothesize, will lead to better learning outcomes.
+</div>
+
+<div class="project-figure">
+  <img src="{{ "images/projects/blitz/learning-diagram.png" | prepend: site.baseurl | prepend: site.url }}">
+  <label>That’s better</label>
+</div>
+
+<div class="project-section">
+  <p> Eventually, we see this project living on multiple platforms: a desktop interface for coaches to input playbook information, a tablet interface for players to use in training camp, and a mobile interface for players to practice in their spare time.
+</div>
+
+<div class="project-figure full-bleed">
+  <img src="{{ "images/projects/blitz/full-product-line.png" | prepend: site.baseurl | prepend: site.url }}">
+</div>
+
+<div class="project-section">
+  <p> Then we focused in on the specific types of questions we might want to ask, validating and iterating on each question with a series of user testing sessions.
+</div>
+
+<div class="project-figure full-bleed">
+  <img src="{{ "images/projects/blitz/wireframes-thumbnails.png" | prepend: site.baseurl | prepend: site.url }}">
+  <label>The wireframes we used to refine our question types.</label>
+</div>
+
+<div class="project-section">
+  <p> And finally we created a high-fidelity prototype to showcase our final question types and get a feel for our final interactions.
+  <p> The prototype came in especially helpful in convincing Steelers head coach Mike Tomlin to move forward with the project. An old-school by-the-book technology skeptic, being able to put a physical tablet in his hands with our prototype interface—an interface that he could actually touch and interact with, helped him move beyond his initial skepticism, and allow the product to be tested in his locker room.
+  <p> Watch the prototype in action:
+</div>
+
+
+<div class="project-figure full-bleed">
+  <iframe width="1280" height="623" src="https://www.youtube.com/embed/x1RzyxSOy_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div class="project-section">
+  <h2 class="title">Results</h2>
+  <p> At the end of the semester, the Steelers hired MAYA, a Pittsburgh-based design consultancy, to move the project into real-world testing. Their work is still ongoing.
+  <p> ↜ <a href="{{ "projects.html" | prepend: site.baseurl | prepend: site.url }}">Return to projects</a><img src="{{ "images/smile.svg" | prepend: site.baseurl | prepend: site.url }}" class="face project-smile">
+</div>

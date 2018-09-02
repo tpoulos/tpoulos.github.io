@@ -1,0 +1,51 @@
+---
+layout: default
+title: "Ultrasonic Echolocation"
+---
+<div class="project-meta">
+  <h1 class="project-title">Ultrasonic Echolocation</h1>
+  <div class="project-teaser">Getting around with inaudible sound</div>
+  <ul class="project-context">
+    <li>Group project for 67–475: Innovation in Information Systems (Senior Year)</li>
+    <li>Project lead on a three person team</li>
+    <li>Mobile assistive technology</li>
+  </ul>
+</div>
+
+<div class="project-section">
+  <p>People with a visual impairment have a hard time navigating novel spaces. It’s especially difficult to avoid obstacles between five and fifteen feet away, as they are too far to be reached by a white cane, but are also too small to be marked on a map. Compounding the issue, there is often strong stigma associated with using visible or audible assistive technologies, and any assistive technology too complicated or difficult to use has a high rate of abandonment.
+  <p>During our senior Information Systems project class, my teammates and I saw <a href="https://www.youtube.com/watch?v=Z_E3zxx2l9g">a really interesting video of a fully blind man navigating and even riding a bike</a> using sound. His name is Daniel Kish, and he’s famous for demonstrating this technique by performing stunts on his bicycle, and for teaching the technique to people all over the world. But, many people are unwilling to use the technique because it takes a long time to learn and requires them to make a very loud noise everywhere they go.
+</div>
+
+<div class="project-section">
+  <h2 class="title">Our solution</h2>
+  <p>We prototyped a system that takes this echolocation technique ultrasonic, so that the clicks can’t be heard by anyone around you. Functionally, it’s like wearing a military sonar (only less conspicuous).
+  <p>Here’s what wearing it would sound like:
+</div>
+
+<div class="project-figure">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3jy8iMufesQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div class="project-section">
+  <p>As part of the project, we hacked together a working prototype, and validated it by testing the techniques in rooms with and without obstacles. Our prototype was rough and unwieldy, built with Apple earbuds and a Raspberry Pi.
+</div>
+
+<div class="project-figure">
+  <img width="450" src="{{ "images/projects/ultrasonic-echolocation/prototype.png" | prepend: site.baseurl | prepend: site.url }}">
+</div>
+
+<div class="project-section">
+  <p>We validated this prototype with a series of bench tests, measuring the difference in the volume of clicks when an obstacle (in this case a large table) was present or absent. Our results indicated that the technique was plausible, although more study is needed.
+</div>
+
+<div class="project-figure">
+  <img src="{{ "images/projects/ultrasonic-echolocation/bench-test.png" | prepend: site.baseurl | prepend: site.url }}">
+</div>
+
+<div class="project-section">
+  <p>Eventually, USE might be integrated into a pair of headphones, allowing a visually impaired person to navigate around obstacles inconspicuously.
+
+  <p> ↜ <a href="{{ "projects.html" | prepend: site.baseurl | prepend: site.url }}">Return to projects</a><img src="{{ "images/smile.svg" | prepend: site.baseurl | prepend: site.url }}" class="face project-smile">
+
+</div>

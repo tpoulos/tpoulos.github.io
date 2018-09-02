@@ -1,0 +1,81 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Founders", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headline-font-family: "National", impact, sans-serif;
+$base-font-size:   18px;
+$base-line-height: 24px;
+$spacing-unit:     $base-line-height / 2;
+$type-ratio:       1.2;
+
+
+$color-text:       #272727;
+$color-background: #EFEFEF;
+$color-brand:      #6BFFF7;
+
+$on-tablet:          1000px;
+$on-palm:            650px;
+
+$max-content-width:    $on-tablet - $spacing-unit * 2;
+$tablet-content-width:    $on-palm - $spacing-unit * 2;
+$palm-content-width:    calc(100vw - ($spacing-unit * 2));
+
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  }
+
+  @return $value;
+}
+
+@mixin type($multiplier){
+  font-weight: 400;
+  font-size: $base-font-size * pow($type-ratio, $multiplier);
+  line-height: $base-line-height * pow($type-ratio, $multiplier);
+  font-family: $base-font-family;
+}
+
+@mixin stroke-text{
+  font-family: $headline-font-family;
+  color: transparent;
+
+  text-stroke: 0.015em $color-text;
+  -webkit-text-stroke: 0.015em $color-text;
+
+  strong {
+    color: $color-text;
+  }
+}
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "typography",
+        "header",
+        "about",
+        "index",
+        "projects",
+        "project",
+        "talks"
+;

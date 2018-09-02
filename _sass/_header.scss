@@ -1,25 +1,15 @@
 header {
-  @include full-width-container;
+  grid-column: content-start / content-end;
 
-  position: fixed;
-  top: 24/26*1em;
+  padding: 1 * $spacing-unit 0;
 
-  left: 0;
-  right: 0;
+  display: flex;
+  justify-content: space-between;
 
-  mix-blend-mode: luminosity;
-
-  // Move the header to the front of the page
-  z-index: 1000000;
-}
-
-
-header.is-hidden {
-  opacity: 0.0;
-  transition: opacity 0.5s ease;
-}
-
-header.is-shown {
-  opacity: 1;
-  transition: opacity 0.5s ease;
+  .nav-grouping-right {
+    display: flex;
+    .nav-item {
+      margin-left: $spacing-unit * 2;
+    }
+  }
 }

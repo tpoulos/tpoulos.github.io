@@ -1,10 +1,16 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title: Taylor Whitman Poulos
-email: poulos.taylor.w@gmail.com
-description: "Designer and writer studying at Carnegie Mellon University Portfolio and selected writing."
-baseurl: ""
-url: "http://twp.io"
+title: twp | Portfolio
+description: > # this means to ignore newlines until "baseurl:"
+  Digital Product Designer and writing living in Brooklyn, NY
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://twp.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-permalink: pretty

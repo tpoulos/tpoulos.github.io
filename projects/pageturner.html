@@ -1,0 +1,32 @@
+---
+layout: default
+title: "Pageturner"
+---
+<div class="project-meta">
+  <h1 class="project-title">Pageturner</h1>
+  <div class="project-teaser">A teleprompter that actually pays attention</div>
+  <ul class="project-context">
+    <li>Open source solo project</li>
+  </ul>
+</div>
+
+
+<div class="project-figure full-bleed">
+  <video width="1000" autoplay>
+    <source src="{{ "images/projects/pageturner/teleprompter-demo.mp4" | prepend: site.baseurl | prepend: site.url }}" type="video/mp4">
+        <img src="{{ "images/projects/pageturner/pageturner.png" | prepend: site.baseurl | prepend: site.url }}">
+  </video>
+</div>
+
+<div class="project-section">
+  <p>Normal teleprompters scroll text at a constant speed, and don’t adjust if a speaker stops or slows down during their talk. This project is a teleprompter powered by the web speech API, that listens to user’s speech and scrolls the text accordingly.
+  <p>Visit the <a href="https://github.com/tpoulos/pageturner">Github Repo</a> for details on the algorithm I designed keep track of the user’s process, while dealing with the inaccuracies of speech recognition.
+</div>
+
+<div class="project-figure">
+  <iframe width="1280" height="542" src="https://www.youtube.com/embed/AQzNkW-jKjk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div class="project-section">
+  <p> ↜ <a href="{{ "projects.html" | prepend: site.baseurl | prepend: site.url }}">Return to projects</a><img src="{{ "images/smile.svg" | prepend: site.baseurl | prepend: site.url }}" class="face project-smile">
+</div>

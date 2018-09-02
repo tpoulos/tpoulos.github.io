@@ -1,0 +1,51 @@
+.about-content {
+  grid-column: content-start / span 7;
+  @include type(2);
+
+  @include media-query($on-tablet) {
+    grid-column: content-start / span 7;
+    @include type(1);
+  }
+
+  @include media-query($on-palm) {
+    grid-column: content-start / content-end;
+    @include type(0);
+  }
+}
+
+.about-meh {
+  right: 7rem;
+  top: 8.2rem;
+  transform: rotate(-64deg);
+
+  @include media-query($on-tablet) {
+    right: 3.5rem;
+    top: 4.2rem;
+  }
+
+  @include media-query($on-palm) {
+
+    transform: rotate(-23deg);
+    right: 0rem;
+    top: -7rem;
+  }
+}
+
+
+.about-headshot {
+  grid-column: span 4 / content-end;
+
+  z-index: -2;
+
+  img {
+    width: 100%;
+  }
+
+  @include media-query($on-tablet) {
+    grid-column: span 4 / content-end;
+  }
+
+  @include media-query($on-palm) {
+    display: none;
+  }
+}

@@ -1,16 +1,37 @@
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+  <title>{% if page.title %}twp | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <style>
+    @font-face {
+      font-family: 'National';
+      src: url("{{ "fonts/National2NarrowWeb-Bold.eot" | prepend: site.baseurl | prepend: site.url }}") format('embedded-opentype'), /* IE6-IE8 */
+           url("{{ "fonts/National2NarrowWeb-Bold.woff2" | prepend: site.baseurl | prepend: site.url }}") format('woff2'), /* Super Modern Browsers */
+           url("{{ "fonts/National2NarrowWeb-Bold.woff" | prepend: site.baseurl | prepend: site.url }}") format('woff'); /* Pretty Modern Browsers */
+      font-display: swap;
+    }
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/show-header.js"></script>
-
-    <script src="//use.typekit.net/fnk3drr.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    @font-face {
+      font-family: 'Founders';
+      src: url("{{ "fonts/FoundersGroteskWeb-Regular.eot" | prepend: site.baseurl | prepend: site.url }}") format('embedded-opentype'), /* IE6-IE8 */
+           url("{{ "fonts/FoundersGroteskWeb-Regular.woff2" | prepend: site.baseurl | prepend: site.url }}") format('woff2'), /* Super Modern Browsers */
+           url("{{ "fonts/FoundersGroteskWeb-Regular.woff" | prepend: site.baseurl  | prepend: site.url }}") format('woff'); /* Pretty Modern Browsers */
+      font-display: swap;
+    }
+  </style>
+  <link rel="preload" href="{{ "fonts/National2NarrowWeb-Bold.woff2" | prepend: site.baseurl | prepend: site.url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ "fonts/FoundersGroteskWeb-Regular.woff2" | prepend: site.baseurl | prepend: site.url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ "css/main.css" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
