@@ -10,7 +10,7 @@ title: twp | Portfolio
 description: > # this means to ignore newlines until "baseurl:"
   Digital Product Designer and writing living in Brooklyn, NY
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: //twp.io/"" # the base hostname & protocol for your site
+url: http://twp.io/"" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
