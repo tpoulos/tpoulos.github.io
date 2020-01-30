@@ -31,6 +31,15 @@
 
 .index-content {
   grid-column: content-start / content-end;
+
+
+  padding-top: 50px;
+  @include media-query($on-tablet) {
+    padding-top: 30px;
+  }
+  @include media-query($on-palm) {
+    padding-top: 20px;
+  }
 }
 
 .index-text {
@@ -44,8 +53,17 @@
   @include media-query($on-tablet) {
     font-size: 90px;
   }
+  
   @include media-query($on-palm) {
     font-size: 47px;
     margin-top: 5vh;
   }
+}
+
+.index-spacer {
+  height: 5px;
+  background-color: white;
+  margin: 20vh 0 0 0;
+  grid-column: start / end;
+
 }

@@ -90,7 +90,7 @@ li {
   }
 }
 
-.page-title {
+.page-title, .index-title {
   grid-column: content-start / content-end;
   margin-top: 10vh;
   position: relative;

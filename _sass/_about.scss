@@ -1,15 +1,29 @@
 .about-content {
   grid-column: content-start / span 7;
-  @include type(2);
+  @include type(0);
 
   @include media-query($on-tablet) {
     grid-column: content-start / span 7;
-    @include type(1);
+    @include type(0);
   }
 
   @include media-query($on-palm) {
     grid-column: content-start / content-end;
     @include type(0);
+  }
+
+  .super {
+    @include type(4);
+
+    @include media-query($on-tablet) {
+      grid-column: content-start / span 7;
+      @include type(3);
+    }
+
+    @include media-query($on-palm) {
+      grid-column: content-start / content-end;
+      @include type(2);
+    }
   }
 }
 
