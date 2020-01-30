@@ -53,7 +53,7 @@
   @include media-query($on-tablet) {
     font-size: 90px;
   }
-  
+
   @include media-query($on-palm) {
     font-size: 47px;
     margin-top: 5vh;
@@ -61,9 +61,9 @@
 }
 
 .index-spacer {
-  height: 5px;
+  height: 10px;
   background-color: white;
-  margin: 20vh 0 0 0;
+  margin: 20vh 0 10vh 0;
   grid-column: start / end;
-
+  z-index: -1;
 }

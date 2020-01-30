@@ -1,6 +1,6 @@
 .about-content {
   grid-column: content-start / span 7;
-  @include type(0);
+  @include type(1);
 
   @include media-query($on-tablet) {
     grid-column: content-start / span 7;
