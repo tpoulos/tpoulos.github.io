@@ -28,9 +28,18 @@
 }
 
 .about-meh {
-  right: 7rem;
-  top: 8.2rem;
+  right: 15rem;
+  top: 13rem;
   transform: rotate(-64deg);
+
+  @include media-query(1600px) {
+      right: 10rem;
+      top: 13rem;
+    }
+  @include media-query(1280px) {
+      right: 7rem;
+      top: 13rem;
+    }
 
   @include media-query($on-tablet) {
     right: 3.5rem;
@@ -50,6 +59,7 @@
   grid-column: span 4 / content-end;
 
   z-index: -2;
+  margin-top: 40px;
 
   img {
     width: 100%;

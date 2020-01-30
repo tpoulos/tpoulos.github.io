@@ -76,17 +76,15 @@ li {
 
 .wrapper {
   display: grid;
-  grid-template-columns: [start] 1fr [content-start] repeat(12, (($max-content-width / 12) - $spacing-unit)) [content-end] 1fr [end];
+  grid-template-columns: [start] 2 * $spacing-unit [content-start] repeat(12, 1fr) [content-end] 2 * $spacing-unit [end];
   grid-column-gap: $spacing-unit;
 
-  margin-bottom: 8 * $spacing-unit;
+  margin-bottom: 10vh;
 
-  @include media-query($on-tablet) {
-    grid-template-columns: [start] 1fr [content-start] repeat(12, (($tablet-content-width / 12) - $spacing-unit)) [content-end] 1fr [end];
-  }
+  grid-gap: 2* $spacing-unit;
 
   @include media-query($on-palm) {
-    grid-template-columns: [start] $spacing-unit * 2 [content-start] repeat(12, 1fr) [content-end] $spacing-unit * 2 [end];
+    grid-template-columns: [start] $spacing-unit [content-start] repeat(12, 1fr) [content-end] $spacing-unit [end];
   }
 }
 
