@@ -1,15 +1,31 @@
 header {
-  grid-column: content-start / content-end;
+  grid-column: start / end;
 
-  padding: 1 * $spacing-unit 0;
+  padding: 4 * $spacing-unit ;
 
   display: flex;
   justify-content: space-between;
 
+  background-color: white;
+
+
+
   .nav-grouping-right {
     display: flex;
     .nav-item {
-      margin-left: $spacing-unit * 2;
+      margin-left: 4 * $spacing-unit;
+    }
+  }
+
+  @include media-query($on-palm) {
+    padding: 2 * $spacing-unit ;
+    color: red;
+
+    .nav-grouping-right {
+      display: flex;
+      .nav-item {
+        margin-left: 2* $spacing-unit;
+      }
     }
   }
 }
